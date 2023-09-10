@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools >= 68", "wheel","setuptools-git >= 1.1", "pytest-runner", "toml", "reahl-component-metadata >= 7.0.0"]
+build-backend = "setuptools.build_meta"
+
+  
+[project]
+name = "sqlalchemy-example"
+version = "4.0"
+dependencies = [
+  "reahl-component"
+]
+
+[tool.setuptools.packages.find]
+exclude = ["etc", "build", "dist"]
+
+[tool.reahl-component]
+
+[tool.reahl-component.versions.'3.5']
+
+[tool.reahl-component.versions.'3.1']
+
+[tool.reahl-component.versions.'3.0']
+

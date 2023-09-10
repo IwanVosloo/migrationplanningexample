@@ -1,0 +1,5 @@
+dist
+*whl
+*egg-info
+*~
+*svg
