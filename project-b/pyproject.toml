@@ -5,7 +5,7 @@ build-backend = "setuptools.build_meta"
   
 [project]
 name = "project-b"
-version = "4.0"
+version = "3.1"
 dependencies = [
   "project-c>=4.0,<4.1",
   "project-a>=1.4,<1.5",
@@ -17,14 +17,14 @@ exclude = ["etc", "build", "dist"]
 
 [tool.reahl-component]
 
-[tool.reahl-component.versions.'3.1']
+[tool.reahl-component.versions.'3.0']
 install_requires = [
   "project-c>=3.1,<3.2",
   "project-a>=1.3,<1.4",
   "reahl-component>=7.0,<7.1"
 ]
 
-[tool.reahl-component.versions.'3.0']
+[tool.reahl-component.versions.'2.0']
 install_requires = [
   "project-c>=3.0,<3.1",
   "reahl-component>=7.0,<7.1"
