@@ -7,9 +7,9 @@ build-backend = "setuptools.build_meta"
 name = "myproject"
 version = "2.0"
 dependencies = [
-  "domain-example>=4.0,<4.1",
-  "declarative-example>=4.0,<4.1",
-  "sqlalchemy-example>=4.0,<4.1",
+  "project-b>=4.0,<4.1",
+  "project-a>=4.0,<4.1",
+  "project-c>=4.0,<4.1",
   "reahl-sqlalchemysupport>=7.0,<7.1"
 ]
 
@@ -20,8 +20,8 @@ exclude = ["etc", "build", "dist"]
 
 [tool.reahl-component.versions.'1.0']
 install_requires = [
-  "domain-example>=3.0,<3.1",
-  "declarative-example>=3.0,<3.1",
-  "sqlalchemy-example>=3.0,<3.1",
+  "project-b>=3.0,<3.1",
+  "project-a>=3.0,<3.1",
+  "project-c>=3.0,<3.1",
   "reahl-sqlalchemysupport>=7.0,<7.1"
 ]
