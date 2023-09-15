@@ -7,7 +7,7 @@ build-backend = "setuptools.build_meta"
 name = "sqlalchemy-example"
 version = "4.0"
 dependencies = [
-  "reahl-component"
+  "reahl-component>=7.0,<7.1"
 ]
 
 [tool.setuptools.packages.find]
@@ -16,8 +16,17 @@ exclude = ["etc", "build", "dist"]
 [tool.reahl-component]
 
 [tool.reahl-component.versions.'3.5']
+install_requires = [
+  "reahl-component>=7.0,<7.1"
+]
 
 [tool.reahl-component.versions.'3.1']
+install_requires = [
+  "reahl-component>=7.0,<7.1"
+]
 
 [tool.reahl-component.versions.'3.0']
+install_requires = [
+  "reahl-component>=7.0,<7.1"
+]
 

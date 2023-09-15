@@ -9,7 +9,7 @@ version = "4.0"
 dependencies = [
   "sqlalchemy-example>=4.0,<4.1",
   "declarative-example>=4.0,<4.1",
-  "reahl-component"
+  "reahl-component>=7.0,<7.1"
 ]
 
 [tool.setuptools.packages.find]
@@ -20,11 +20,13 @@ exclude = ["etc", "build", "dist"]
 [tool.reahl-component.versions.'3.1']
 install_requires = [
   "sqlalchemy-example>=3.1,<3.2",
-  "declarative-example>=3.1,<3.2"
+  "declarative-example>=3.1,<3.2",
+  "reahl-component>=7.0,<7.1"
 ]
 
 [tool.reahl-component.versions.'3.0']
 install_requires = [
   "sqlalchemy-example>=3.0,<3.1",
-  "declarative-example>=3.0,<3.1"
+  "declarative-example>=3.0,<3.1",
+  "reahl-component>=7.0,<7.1"
 ]
