@@ -16,14 +16,14 @@ class CreateDB(Migration):
 
 
 
-class AdaptToNewProjectC31(Migration):
+class ToNewC31(Migration):
     def schedule_upgrades(self):
         self.schedule('drop_fk', op.drop_constraint, 'fk_bobject_to_c_cobject', 'bobject')
         self.schedule('create_fk', op.create_foreign_key, 'fk_bobject_to_c_cobject',
                       'bobject', 'cobject', ['to_c'], ['keyc1'])
 
 
-class AdaptToNewProjectC40(Migration):
+class ToNewC40(Migration):
     def schedule_upgrades(self):
         self.schedule('drop_fk', op.drop_constraint, 'fk_bobject_to_c_cobject', 'bobject')
         self.schedule('create_fk', op.create_foreign_key, 'fk_bobject_to_c_cobject',

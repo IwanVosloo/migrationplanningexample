@@ -16,7 +16,7 @@ class CreateDB(Migration):
 
 
 
-class Migration31(Migration):
+class To31(Migration):
     def schedule_upgrades(self):
         self.schedule('drop_fk', op.drop_constraint, 'fk_cobject_another_c_cobject', 'cobject')
         self.schedule('create_fk', op.create_foreign_key, 'fk_cobject_another_c_cobject',
@@ -27,7 +27,7 @@ class Migration31(Migration):
         self.schedule('create_pk', op.create_primary_key, 'pk_cobject', 'cobject', ['keyc1'])
 
 
-class Migration35(Migration):
+class To35(Migration):
     def schedule_upgrades(self):
         self.schedule('drop_fk', op.drop_constraint, 'fk_cobject_another_c_cobject', 'cobject')
         self.schedule('create_fk', op.create_foreign_key, 'fk_cobject_another_c_cobject',
@@ -38,7 +38,7 @@ class Migration35(Migration):
         self.schedule('create_pk', op.create_primary_key, 'pk_cobject', 'cobject', ['keyc2'])
 
         
-class Migration40(Migration):
+class To40(Migration):
     def schedule_upgrades(self):
         self.schedule('drop_fk', op.drop_constraint, 'fk_cobject_another_c_cobject', 'cobject')
         self.schedule('create_fk', op.create_foreign_key, 'fk_cobject_another_c_cobject',

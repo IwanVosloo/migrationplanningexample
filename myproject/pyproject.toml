@@ -34,5 +34,5 @@ migrations = [
 
 [tool.reahl-component.versions.'2.0']
 migrations = [
-  "myproject.migrations:AdaptToNewProjectC"
+  "myproject.migrations:ToNewC"
   ]

@@ -18,7 +18,7 @@ class CreateDB(Migration):
 
 
 
-class AdaptToNewProjectC(Migration):
+class ToNewC(Migration):
     def schedule_upgrades(self):
         self.schedule('drop_fk', op.drop_constraint, 'fk_myobject_to_c_cobject', 'myobject')
         self.schedule('create_fk', op.create_foreign_key, 'fk_myobject_to_c_cobject',
