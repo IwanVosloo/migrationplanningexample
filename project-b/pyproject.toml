@@ -18,6 +18,11 @@ exclude = ["etc", "build", "dist"]
 
 [tool.reahl-component]
 
+[tool.reahl-component.versions.'3.1']
+migrations = [
+  "projectb.migrations:AdaptToNewProjectC40"
+]
+
 [tool.reahl-component.versions.'3.0']
 install_requires = [
   "project-c>=3.1,<3.2",
@@ -25,10 +30,17 @@ install_requires = [
   "reahl-component>=7.0,<7.1",
   "reahl-sqlalchemysupport>=7.0,<7.1"
 ]
+migrations = [
+  "projectb.migrations:AdaptToNewProjectC31"
+]
+
 
 [tool.reahl-component.versions.'2.0']
 install_requires = [
   "project-c>=3.0,<3.1",
   "reahl-component>=7.0,<7.1",
   "reahl-sqlalchemysupport>=7.0,<7.1"
+]
+migrations = [
+  "projectb.migrations:CreateDB"
 ]

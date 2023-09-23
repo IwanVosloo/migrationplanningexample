@@ -1,7 +1,8 @@
 [build-system]
-requires = ["setuptools >= 68", "wheel","setuptools-git >= 1.1", "pytest-runner", "toml", "reahl-component-metadata >= 7.0.0"]
+requires = [
+  "setuptools >= 68",
+  "reahl-component-metadata >= 7.0.0"]
 build-backend = "setuptools.build_meta"
-
   
 [project]
 name = "myproject"
@@ -25,3 +26,13 @@ install_requires = [
   "project-c>=3.0,<3.1",
   "reahl-sqlalchemysupport>=7.0,<7.1"
 ]
+
+migrations = [
+  "myproject.migrations:CreateDB"
+  ]
+
+
+[tool.reahl-component.versions.'2.0']
+migrations = [
+  "myproject.migrations:AdaptToNewProjectC"
+  ]
