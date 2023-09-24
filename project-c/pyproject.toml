@@ -15,6 +15,9 @@ dependencies = [
 exclude = ["etc", "build", "dist"]
 
 [tool.reahl-component]
+persisted = [
+  "projectc.code:CObject"
+]
 
 [tool.reahl-component.versions.'4.0']
 migrations = [
@@ -22,7 +25,7 @@ migrations = [
 ]
 
 [tool.reahl-component.versions.'3.5']
-install_requires = [
+dependencies = [
   "reahl-component>=7.0,<7.1",
   "reahl-sqlalchemysupport>=7.0,<7.1"
 ]
@@ -32,7 +35,7 @@ migrations = [
 ]
 
 [tool.reahl-component.versions.'3.1']
-install_requires = [
+dependencies = [
   "reahl-component>=7.0,<7.1",
   "reahl-sqlalchemysupport>=7.0,<7.1"
 ]
@@ -41,7 +44,7 @@ migrations = [
 ]
 
 [tool.reahl-component.versions.'3.0']
-install_requires = [
+dependencies = [
   "reahl-component>=7.0,<7.1",
   "reahl-sqlalchemysupport>=7.0,<7.1"
 ]
