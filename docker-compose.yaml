@@ -1,0 +1,10 @@
+version: "3.9"
+services:
+
+  postgres:
+    container_name: postgres
+    image: postgres:12.3
+    restart: always
+    environment:
+        POSTGRES_PASSWORD: reahl
+        POSTGRES_USER: developer
