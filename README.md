@@ -66,6 +66,12 @@ Install and run example
 make
 ```
 
-Create DB schema and user
-=========================
+Create DB
+=========
 
+The following will create the db using the url as specified using the config in etc
+
+```
+reahl createdbuser etc
+reahl createdb etc
+```
