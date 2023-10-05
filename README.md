@@ -33,8 +33,8 @@ Look at the [Reahl web framework](https://www.reahl.org) example [here.](https:/
 Setup Database
 ==============
 
-The database url confired in
-----------------------------
+The database url configured in
+------------------------------
 
 ```
 myproject/etc/reahl.config.py
