@@ -49,14 +49,24 @@ reahlsystem.connection_uri = 'postgresql://reahl:reahl@postgres/reahl'
 
 
 
-Start Postgres DB using docker
-==============================
+Postgres DB
+===========
 
-Use docker-compose
-------------------
+Create Postgres instance using docker-compose
+---------------------------------------------
 
 ```
 docker-compose up -d
+```
+
+Setup the db
+------------
+
+The following will create the db using the url as specified using the config in etc
+
+```
+reahl createdbuser etc
+reahl createdb etc
 ```
 
 Install and run example
@@ -66,12 +76,4 @@ Install and run example
 make
 ```
 
-Create DB
-=========
 
-The following will create the db using the url as specified using the config in etc
-
-```
-reahl createdbuser etc
-reahl createdb etc
-```
